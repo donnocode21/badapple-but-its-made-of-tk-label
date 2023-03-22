@@ -33,7 +33,7 @@ def I2T(File):
 		counter = counter + 1
 		if counter >= w:
 			counter = 0
-			row += 1
+			if field: row += 1
 			field = not field
 
 def start():
