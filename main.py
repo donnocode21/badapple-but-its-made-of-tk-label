@@ -49,7 +49,7 @@ def start():
 		time.sleep(1 / FPS)
 		index += 1
 		I2T(BytesIO(imencode(".jpg", resize(image, (20, 10), interpolation = 3))[1]))
-		for index_rows in range(1,10):
+		for index_rows in range(1,11):
 			changeLabel(index_rows, content[index_rows - 1]) # Missing Subtract of One.
 			content[index_rows - 1] = "" #Clear a index of content
 		FRAME_DISPLAY = "Frame " + str(index)
